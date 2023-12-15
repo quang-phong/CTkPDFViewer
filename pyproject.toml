@@ -1,0 +1,34 @@
+[project]
+name = "CTkPDFViewer"  # Required
+
+# Versions should comply with PEP 440:
+version = "1.0.0"  # Required
+
+# This is a one-line description or tagline of what your project does.
+description = "CTk PDF Viewer"  # Optional
+
+
+# Specify which Python versions you support. 
+requires-python = ">=3.7"
+
+# This is either text indicating the license for the distribution, or a file
+# that contains the license
+license = {file = "LICENSE"}
+
+# This field lists other packages that your project depends on to run.
+dependencies = [ # Optional
+  "customtkinter"
+]
+
+# This is configuration specific to the `setuptools` build backend.
+# If you are using a different build backend, you will need to change this.
+[tool.setuptools]
+# If there are data files included in your packages that need to be
+# installed, specify them here.
+package-data = {"sample" = ["*.dat"]}
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
